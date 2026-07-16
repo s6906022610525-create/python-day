@@ -1,7 +1,9 @@
-num = float(input("Enter a number: "))
-if num > 0:
-    print("positive number.")
-elif num == 0:
-    print("Zero.")
+inchar = input("Input one character:")
+if inchar >= 'A' and inchar <= 'Z':
+    print("You input an Upper Case Letter ", inchar)
+elif inchar >= 'a' and inchar <= 'z':
+    print("You input a Lower Case Letter ", inchar)
+elif inchar >= '0' and inchar <= '9':
+    print("You input Number ", inchar)
 else:
-    print("Negative number.")
+    print("It's not a letter or number.", inchar)
